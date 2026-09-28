@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "connectmedia-sms"
+version = "1.0.0"
+description = "Official Python client for the Connect Media SMS API: bulk SMS to Safaricom, Airtel and Telkom in Kenya and 190+ countries."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Connect Media", email = "info@connectmedia.co.ke" }]
+requires-python = ">=3.8"
+keywords = ["sms", "bulk sms", "kenya", "safaricom", "airtel", "sms api", "connect media"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Communications :: Telephony",
+]
+
+[project.urls]
+Homepage = "https://connectmedia.co.ke/"
+Documentation = "https://connectmedia.co.ke/developers/"
+Pricing = "https://connectmedia.co.ke/pricing/"
+
+[tool.setuptools]
+packages = ["connectmedia_sms"]
