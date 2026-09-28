@@ -22,6 +22,8 @@ classifiers = [
 Homepage = "https://connectmedia.co.ke/"
 Documentation = "https://connectmedia.co.ke/developers/"
 Pricing = "https://connectmedia.co.ke/pricing/"
+Source = "https://github.com/connectmedia-ke/connectmedia-python"
+Issues = "https://github.com/connectmedia-ke/connectmedia-python/issues"
 
 [tool.setuptools]
 packages = ["connectmedia_sms"]
