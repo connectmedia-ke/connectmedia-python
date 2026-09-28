@@ -120,7 +120,7 @@ class Client:
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
             "Accept": "application/json",
-            "User-Agent": "connectmedia-sms-python/1.0.0",
+            "User-Agent": "connectmedia-sms-python/10.0.0",
         }
         try:
             raw = self._transport(self.base_url, headers, body, self.timeout)

@@ -3,4 +3,4 @@
 from .client import Client, ConnectMediaError, normalize_msisdn
 
 __all__ = ["Client", "ConnectMediaError", "normalize_msisdn"]
-__version__ = "1.0.0"
+__version__ = "10.0.0"
