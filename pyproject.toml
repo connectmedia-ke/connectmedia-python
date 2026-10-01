@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "connectmedia-sms"
-version = "10.0.0"
+version = "10.0.1"
 description = "Official Python client for the Connect Media SMS API: bulk SMS to Safaricom, Airtel and Telkom in Kenya and 190+ countries."
 readme = "README.md"
 license = { text = "MIT" }

@@ -32,7 +32,7 @@ class ClientTest(unittest.TestCase):
         t = FakeTransport({"code": "201", "message": "Queued"})
         res = Client("k" * 64, transport=t).send(["0712345678", "+254733000111"], "Hi", sender="Brand")
         url, headers, body = t.calls[0]
-        self.assertEqual(url, "https://dashboard.connectmedia.co.ke/api.php")
+        self.assertEqual(url, "https://app.connectmedia.co.ke/api.php")
         self.assertEqual(headers["Authorization"], "Bearer " + "k" * 64)
         self.assertEqual(body, {"action": "send", "to": "254712345678,254733000111", "message": "Hi", "sender": "Brand"})
         self.assertEqual(res["code"], "201")

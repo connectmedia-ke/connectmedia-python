@@ -5,7 +5,7 @@ import urllib.request
 from datetime import datetime
 from typing import Any, Callable, Dict, Iterable, Optional, Union
 
-DEFAULT_BASE_URL = "https://dashboard.connectmedia.co.ke/api.php"
+DEFAULT_BASE_URL = "https://app.connectmedia.co.ke/api.php"
 
 # Application code returned in the JSON envelope when each action succeeds.
 SUCCESS_CODES = {"send": "201", "balance": "200", "history": "202", "inbox": "302"}
@@ -120,7 +120,7 @@ class Client:
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
             "Accept": "application/json",
-            "User-Agent": "connectmedia-sms-python/10.0.0",
+            "User-Agent": "connectmedia-sms-python/10.0.1",
         }
         try:
             raw = self._transport(self.base_url, headers, body, self.timeout)
